@@ -1,3 +1,3 @@
-web: gunicorn app:app --worker-class uvicorn.workers.UvicornWorker
+web: gunicorn app:app --worker-class websockets
 heroku ps:scale web=1
 
