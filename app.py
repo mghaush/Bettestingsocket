@@ -45,5 +45,6 @@ start_server = websockets.serve(ws_handler, "bettingsocket-d89de658d946.herokuap
 if __name__ == '__main__':
     #app.run(host='localhost', port=443, debug=True, threaded=True)
     # Start the WebSocket server in a separate event loop
-    asyncio.get_event_loop().run_until_complete(start_server)
-    asyncio.get_event_loop().run_forever()
+    #asyncio.get_event_loop().run_until_complete(start_server)
+    #asyncio.get_event_loop().run_forever()
+    asyncio.run(start_server)
