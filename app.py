@@ -47,4 +47,3 @@ if __name__ == '__main__':
     # Start the WebSocket server in a separate event loop
     asyncio.get_event_loop().run_until_complete(start_server)
     asyncio.get_event_loop().run_forever()
-    app.run(debug=True, threaded=True)
