@@ -40,7 +40,7 @@ def broadcast_message():
         return 'No message provided', 400
 
 # Start the WebSocket server
-start_server = websockets.serve(ws_handler, "localhost", 5000)
+start_server = websockets.serve(ws_handler, "bettingsocket-d89de658d946.herokuapp.com")
 
 if __name__ == '__main__':
     #app.run(host='localhost', port=443, debug=True, threaded=True)
