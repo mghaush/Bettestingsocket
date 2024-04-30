@@ -24,6 +24,7 @@ async def ws_handler(websocket, path):
  
 async def main():
     async with websockets.serve(ws_handler, "bettingsocket-d89de658d946.herokuapp.com", 7890):
+        print(f"PORT SET")
         await asyncio.Future()  # run forever
  
 if __name__ == "__main__":
