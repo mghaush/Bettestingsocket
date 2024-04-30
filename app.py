@@ -29,4 +29,5 @@ async def main():
         await asyncio.Future()  # run forever
  
 if __name__ == "__main__":
+    print(f"PORT SET")
     asyncio.run(main())
