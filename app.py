@@ -1,5 +1,6 @@
 import websockets
 import asyncio
+import os
  
 # Creating WebSocket server
 connected_clients = []
@@ -23,7 +24,7 @@ async def ws_handler(websocket, path):
 
  
 async def main():
-    async with websockets.serve(ws_handler, "bettingsocket-d89de658d946.herokuapp.com", 7890):
+    async with websockets.serve(ws_handler, "bettingsocket-d89de658d946.herokuapp.com", os.environ.get('PORT')):
         print(f"PORT SET")
         await asyncio.Future()  # run forever
  
